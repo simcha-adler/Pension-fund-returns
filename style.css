@@ -1,0 +1,24 @@
+body {
+    height: 100vh;
+    background: linear-gradient(180deg, #fff8dc, #ffe4c4)
+}
+
+#body {
+    height: 72vh;
+    align-content: center;
+}
+
+#graph {
+    height: 50%;
+}
+
+#footer, #nav {
+    background-color: peru;
+}
+
+#footer {
+    height: 7vh;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
