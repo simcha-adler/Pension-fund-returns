@@ -6,7 +6,7 @@
     <title>נתוני קרנות פנסיה</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
+    <!--style>
         body { font-family: Arial, sans-serif; margin: 20px; }
         h1, h2 { color: #333; }
         #companiesList, #fundsList { list-style-type: none; padding: 0; }
@@ -20,25 +20,29 @@
         #companiesList li:hover, #fundsList li:hover { background-color: #ddd; }
         .selected { background-color: #007bff !important; color: white !important; }
         #chartContainer { width: 100%; max-width: 800px; height: 400px; margin-top: 20px; }
-    </style>
+    </style-->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>חברות מנהלות קרנות פנסיה</h1>
-    <p>לחצו על שם חברה כדי לראות את הקרנות שלה.</p>
-    <ul id="companiesList">
+    <div id="companiesSection">
+        <h1>חברות מנהלות קרנות פנסיה</h1>
+        <p>לחצו על שם חברה כדי לראות את הקרנות שלה.</p>
+        <ul id="companiesList" class="companies-container">
         </ul>
+    </div>
 
     <div id="fundsSection" style="display:none;">
         <h2 id="fundsHeader"></h2>
-        <ul id="fundsList">
+        <ul id="fundsList" class="companies-container">
             </ul>
     </div>
 
-    <div id="chartContainer" style="display:none;">
+    <div id="chartContainer" style="width: 100%; height: 50vh; display:none;">
         <h2>גרף תשואות שנתיות</h2>
         <canvas id="pensionChart"></canvas>
     </div>
+    
 
     <script src="script.js"></script>
 

@@ -1,0 +1,30 @@
+body {
+    height: 100vh;
+    background: linear-gradient(180deg, rgb(200, 255, 255),rgb(100, 255, 255))
+}
+
+#body {
+    height: 72vh;
+    align-content: center;
+}
+
+#graph {
+    height: 50%;
+}
+
+#footer, #nav {
+    background-color:rgb(28 74 99 / 80%);
+    background-color: rgb(28, 99, 99);
+}
+
+#footer {
+    height: 7vh;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#kranot, #companys {
+    display: none;
+}
+

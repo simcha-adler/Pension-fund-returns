@@ -1,29 +1,33 @@
-body {
-    height: 100vh;
-    background: linear-gradient(180deg, rgb(200, 255, 255),rgb(100, 255, 255))
+.companies-container {
+  display: flex; /* הפעלת Flexbox */
+  flex-wrap: wrap; /* שבירת שורות */
+  gap: 15px; /* מרווח בין הכפתורים */
+  justify-content: center; /* יישור הכפתורים למרכז השורה */
 }
 
-#body {
-    height: 72vh;
-    align-content: center;
+/* עיצוב הכפתורים עצמם */
+.company-button {
+  background-color: #2196F3;
+  color: white;
+  padding: 15px; /* מרווח פנימי זהה לכל הצדדים */
+  width: 150px; /* רוחב קבוע */
+  height: 150px; /* גובה קבוע ליצירת ריבוע */
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center; /* יישור הטקסט למרכז */
+  display: flex; /* שימוש ב-Flexbox גם בתוך הכפתור */
+  align-items: center; /* יישור אנכי של הטקסט */
+  justify-content: center; /* יישור אופקי של הטקסט */
 }
 
-#graph {
-    height: 50%;
-}
-
-#footer, #nav {
-    background-color:rgb(28 74 99 / 80%);
-    background-color: rgb(28, 99, 99);
-}
-
-#footer {
-    height: 7vh;
-    position:absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-#kranot, #companys {
-    display: none;
+/* אפקט ריחוף */
+.company-button:hover {
+  background-color: #1E88E5;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
